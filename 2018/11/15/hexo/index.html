@@ -90,7 +90,7 @@
 <meta property="og:description" content="1.什么是Hexo?Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 2.Hexo的安装安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js Git  这两个软件的安装不再详述。下面重点介绍Hexo的安装。 npm install -g hexo 安装完成">
 <meta property="og:locale" content="default">
 <meta property="og:image" content="https://dyddp.top/2018/11/15/hexo/livere.png">
-<meta property="og:updated_time" content="2018-11-16T07:09:33.203Z">
+<meta property="og:updated_time" content="2018-11-16T07:31:14.373Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo简介">
 <meta name="twitter:description" content="1.什么是Hexo?Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 2.Hexo的安装安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js Git  这两个软件的安装不再详述。下面重点介绍Hexo的安装。 npm install -g hexo 安装完成">
@@ -234,36 +234,6 @@
           </a>
         </li>
       
-        
-        <li class="menu-item menu-item-schedule">
-          <a href="/schedule/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-calendar"></i> <br>
-            
-            Schedule
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-sitemap">
-          <a href="/sitemap.xml" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-sitemap"></i> <br>
-            
-            Sitemap
-          </a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-commonweal">
-          <a href="/404/" rel="section">
-            
-              <i class="menu-item-icon fa fa-fw fa-heartbeat"></i> <br>
-            
-            Commonweal 404
-          </a>
-        </li>
-      
 
       
     </ul>
@@ -302,7 +272,7 @@
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DYtt">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
@@ -421,8 +391,10 @@
 </ol>
 <h1 id="5-修改Hexo主题"><a href="#5-修改Hexo主题" class="headerlink" title="5.修改Hexo主题"></a>5.修改Hexo主题</h1><p>本文采用的是NexT的主题，具体安装设置请见帖子[<a href="https://www.jianshu.com/p/33bc0a0a6e90]" target="_blank" rel="noopener">https://www.jianshu.com/p/33bc0a0a6e90]</a></p>
 <h1 id="6-添加标签"><a href="#6-添加标签" class="headerlink" title="6.添加标签"></a>6.添加标签</h1><h2 id="6-1-添加about标签"><a href="#6-1-添加about标签" class="headerlink" title="6.1 添加about标签"></a>6.1 添加about标签</h2><p>在blog目录下使用命令<code>hexo new page about</code>，会看到source目录下生成了一个about文件夹，里面包含一个index.md。在这个文件内，我们可以编写一些about的信息。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 关于我</span><br><span class="line">date: 2018-11-16 11:50:20</span><br><span class="line">type: &quot;about&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br><span class="line">自定义内容</span><br></pre></td></tr></table></figure></p>
-<p>然后，进入themes/next(进入你使用的主题下)打开_config.yml，在menu中添加about的链接。</p>
-<h1 id="7-修改背景图片"><a href="#7-修改背景图片" class="headerlink" title="7.修改背景图片"></a>7.修改背景图片</h1><p>首先找到一个背景图片放到 hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; images 的路径下；<br>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt; _custom ，找到路径下的custom.styl文件，在文件的最上方加上一代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line"> background:url(/images/background.jpg);</span><br><span class="line"> height: 100%;width: 100%;</span><br><span class="line"> background-size:cover;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+<p>然后，进入themes/next(进入你使用的主题下)打开_config.yml，在menu中添加about的链接。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line">  schedule: /schedule/ || calendar</span><br><span class="line">  sitemap: /sitemap.xml || sitemap</span><br><span class="line">  commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure></p>
+<p>在你的主题目录下的zh-Han.yml文件中的menu_icons中添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">menu_icons:</span><br><span class="line">  enable: true</span><br><span class="line">  # icon mapping</span><br><span class="line">  home: home</span><br><span class="line">  about: user</span><br><span class="line">  categories: th</span><br><span class="line">  tags: tags</span><br><span class="line">  archive: archives</span><br><span class="line">  schedule: schedule</span><br><span class="line">  sitemap: sitemap</span><br><span class="line">  commonweal: heartbeat</span><br></pre></td></tr></table></figure></p>
+<h2 id="6-2-添加categories和tags标签"><a href="#6-2-添加categories和tags标签" class="headerlink" title="6.2 添加categories和tags标签"></a>6.2 添加categories和tags标签</h2><p>基本同上</p>
+<h2 id="6-3-添加schedule标签"><a href="#6-3-添加schedule标签" class="headerlink" title="6.3 添加schedule标签"></a>6.3 添加schedule标签</h2><h1 id="7-修改背景图片"><a href="#7-修改背景图片" class="headerlink" title="7.修改背景图片"></a>7.修改背景图片</h1><p>首先找到一个背景图片放到 hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; images 的路径下；<br>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt; _custom ，找到路径下的custom.styl文件，在文件的最上方加上一代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line"> background:url(/images/background.jpg);</span><br><span class="line"> height: 100%;width: 100%;</span><br><span class="line"> background-size:cover;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
 <h1 id="8-添加评论功能"><a href="#8-添加评论功能" class="headerlink" title="8.添加评论功能"></a>8.添加评论功能</h1><p> 使用的是来必力的评论系统，参考文章[<a href="https://blog.csdn.net/qq_41923622/article/details/82966186]" target="_blank" rel="noopener">https://blog.csdn.net/qq_41923622/article/details/82966186]</a></p>
 <p> 基本步骤：</p>
 <ul>
@@ -439,6 +411,7 @@
 <li><p>重新部署博客[hexo g /hexo d]查看效果。</p>
 </li>
 </ul>
+<h1 id="9-更多功能设置"><a href="#9-更多功能设置" class="headerlink" title="9.更多功能设置"></a>9.更多功能设置</h1><p>请移步网址[<a href="https://blog.csdn.net/fanxiaobin577328725/article/details/79209975]查看更多设置。" target="_blank" rel="noopener">https://blog.csdn.net/fanxiaobin577328725/article/details/79209975]查看更多设置。</a></p>
 
       
     </div>
@@ -564,6 +537,8 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image" src="/images/avatar.jpg" alt="DYtt">
+            
               <p class="site-author-name" itemprop="name">DYtt</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -637,7 +612,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-什么是Hexo"><span class="nav-number">1.</span> <span class="nav-text">1.什么是Hexo?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-Hexo的安装"><span class="nav-number">2.</span> <span class="nav-text">2.Hexo的安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-Hexo基本语法"><span class="nav-number">3.</span> <span class="nav-text">3.Hexo基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-每次更新github的常用步骤"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 每次更新github的常用步骤</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-注意"><span class="nav-number">4.</span> <span class="nav-text">4.注意</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-域名访问"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 域名访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-hexo-d-报错"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 hexo d 报错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-上传图片问题"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 上传图片问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-修改Hexo主题"><span class="nav-number">5.</span> <span class="nav-text">5.修改Hexo主题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-添加标签"><span class="nav-number">6.</span> <span class="nav-text">6.添加标签</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1-添加about标签"><span class="nav-number">6.1.</span> <span class="nav-text">6.1 添加about标签</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-修改背景图片"><span class="nav-number">7.</span> <span class="nav-text">7.修改背景图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-添加评论功能"><span class="nav-number">8.</span> <span class="nav-text">8.添加评论功能</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#1-什么是Hexo"><span class="nav-number">1.</span> <span class="nav-text">1.什么是Hexo?</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#2-Hexo的安装"><span class="nav-number">2.</span> <span class="nav-text">2.Hexo的安装</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#3-Hexo基本语法"><span class="nav-number">3.</span> <span class="nav-text">3.Hexo基本语法</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#3-1-每次更新github的常用步骤"><span class="nav-number">3.1.</span> <span class="nav-text">3.1 每次更新github的常用步骤</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#4-注意"><span class="nav-number">4.</span> <span class="nav-text">4.注意</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#4-1-域名访问"><span class="nav-number">4.1.</span> <span class="nav-text">4.1 域名访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-2-hexo-d-报错"><span class="nav-number">4.2.</span> <span class="nav-text">4.2 hexo d 报错</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-3-上传图片问题"><span class="nav-number">4.3.</span> <span class="nav-text">4.3 上传图片问题</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#5-修改Hexo主题"><span class="nav-number">5.</span> <span class="nav-text">5.修改Hexo主题</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#6-添加标签"><span class="nav-number">6.</span> <span class="nav-text">6.添加标签</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#6-1-添加about标签"><span class="nav-number">6.1.</span> <span class="nav-text">6.1 添加about标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-2-添加categories和tags标签"><span class="nav-number">6.2.</span> <span class="nav-text">6.2 添加categories和tags标签</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#6-3-添加schedule标签"><span class="nav-number">6.3.</span> <span class="nav-text">6.3 添加schedule标签</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#7-修改背景图片"><span class="nav-number">7.</span> <span class="nav-text">7.修改背景图片</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#8-添加评论功能"><span class="nav-number">8.</span> <span class="nav-text">8.添加评论功能</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#9-更多功能设置"><span class="nav-number">9.</span> <span class="nav-text">9.更多功能设置</span></a></li></ol></div>
             
 
           </div>
