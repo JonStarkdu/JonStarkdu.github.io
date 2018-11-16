@@ -230,9 +230,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br>
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -331,8 +369,7 @@
 
       
         
-          
-            <p>在你想要打开的位置处右键打开 git bash</p>
+          <p>在你想要打开的位置处右键打开 git bash</p>
 <h2 id="1-从远程克隆项目"><a href="#1-从远程克隆项目" class="headerlink" title="1.从远程克隆项目"></a>1.从远程克隆项目</h2><p><code>git clone git@github.com:xxx/xxx.git</code></p>
 <h2 id="2-分支相关"><a href="#2-分支相关" class="headerlink" title="2.分支相关"></a>2.分支相关</h2><ul>
 <li>查看本地分支  <code>git branch</code></li>
@@ -343,17 +380,14 @@
 <li>创建+切换分支 <code>git checkout -b [branch name]</code></li>
 <li>将新分支推送到github <code>git push origin [branch name]</code></li>
 <li>删除本地分支 <code>git branch -d [branch name]</code></li>
-<li>删除github远程分支 <code>git push origin :[branch name]</code></li>
-</ul>
-<h2 id="3-git删除远程文件-文件夹"><a href="#3-git删除远程文件-文件夹" class="headerlink" title="3.git删除远程文件/文件夹"></a>3.git删除远程文件/文件夹</h2><p>如下，我把src里的全部移除，但是本地文件还保留。主要是一下四个命令</p>
-<ul>
-<li>git rm -r -n –cached  <em>/src/\</em> -n这个参数，执行命令时，是不会删除任何文件，而是展示此命令要删除的文件列表预览。</li>
-<li>git rm -r –cached  <em>/src/\</em>      //最终执行命令</li>
-<li>git commit -m”移除src目录下所有文件的版本控制”    //提交</li>
-<li>git push origin master   //提交到远程服务器</li>
-</ul>
-
-          
+<li>删除github远程分支 <code>git push origin :[branch name]</code></li></ul>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/16/git/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -470,18 +504,17 @@
 
       
         
-          
-            <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+          <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
-
-          
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/16/hello-world/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -598,40 +631,15 @@
 
       
         
-          
-            <p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
-<h1 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h1><p><strong>按照字体大小一共有六级标题。注意，#号后必须有空格。</strong></p>
-<p><img alt="markdown-ti.png" src="/2018/11/15/markdown/ti.png" width="322" height="200"><br><img alt="markdown-ti.png" src="/2018/11/15/markdown/ti1.png" width="322" height="200"></p>
-<p>我们可以在我们可以在标签内容结尾+空格+#来闭合标签，如：</p>
-<p><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti2.png" width="322" height="200"><br><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti3.png" width="322" height="200"></p>
-<h2 id="2-列表："><a href="#2-列表：" class="headerlink" title="2.列表："></a>2.列表：</h2><p>列表分为有序列表和无序列表。<br>无序列表可以用<em> ， + ， — 来创建，推荐使用</em>。</p>
-<p><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti4.png" width="322" height="200"></p>
-<p>有序列表只有下面一种方式，<strong>注意，数字后面的点只能是英文的点。有序列表的序号是根据第一行列表的数字顺序来的。</strong></p>
-<p><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti5.png" width="322" height="200"></p>
-<h2 id="3-区块的引用："><a href="#3-区块的引用：" class="headerlink" title="3.区块的引用："></a>3.区块的引用：</h2><p>语句前加一个&gt;，这句话就是引用，注意&gt;后要一个空格。</p>
-<p><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti6.png" width="322" height="200"></p>
-<h2 id="4-分割线："><a href="#4-分割线：" class="headerlink" title="4.分割线："></a>4.分割线：</h2><p>分割线可以由* - _（星号，减号，底线）这3个符号的至少3个符号表示且不需要连续，中间有空格也可以。建议用减号。</p>
-<h2 id="5-链接"><a href="#5-链接" class="headerlink" title="5.链接"></a>5.链接</h2><p>markdown支持2种链接方式：行内式和参数式，不管是哪一种，链接文字都是用 [方括号] 来标记。<br>行内式的链接格式是：链接的文字放在[]中，链接地址放在随后的（）中。链接还可以带title属性，在链接地址后面空一格，然后用引号引起来。<br>参数式后面的标签可以用””，’’,或者()括起来均可以。</p>
-<p><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti7.png" width="322" height="200"></p>
-<h2 id="6-图片："><a href="#6-图片：" class="headerlink" title="6.图片："></a>6.图片：</h2><p>图片也有2种方式：行内式和参数式。<br>用法跟链接基本一样，唯一的不同就是，图片前面要写一个！。</p>
-<p><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti8.png" width="322" height="200"></p>
-<p><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti9.png" width="322" height="200"></p>
-<h2 id="7-代码框"><a href="#7-代码框" class="headerlink" title="7.代码框"></a>7.代码框</h2><p>只有一行代码，可以在代码首尾用<code>括起来。
-多行代码，则在代码上面一行和代码尾部下面一行都用`</code>。</p>
-<h2 id="8-表格："><a href="#8-表格：" class="headerlink" title="8.表格："></a>8.表格：</h2><p>写法：<br>I之间代表一个单元格内的内容。第一行写完后第二行要写|:—– |:— |:—— |表示格式，不写这一行表格外包起来的线框就不全。</p>
-<p>另外:卸载左边表示左对齐，右边表示右对齐，第三行的数据如果第四行不再写类似第二行的格式设置，则继续跟随第二行的格式。</p>
-<p><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti10.png" width="522" height="150"></p>
-<p>效果如下</p>
-<p><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti11.png" width="522" height="180"></p>
-<h2 id="9-加粗和倾斜："><a href="#9-加粗和倾斜：" class="headerlink" title="9.加粗和倾斜："></a>9.加粗和倾斜：</h2><p>加粗：要加粗的语句前后加上两个星号或下划线。</p>
-<p>倾斜：要倾斜的语句前后加上一个星号或下划线。</p>
-<p><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti12.png" width="322" height="180"></p>
-<h2 id="10-转义："><a href="#10-转义：" class="headerlink" title="10.转义："></a>10.转义：</h2><p>这里列举一些常用的转义字符。</p>
-<p><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti13.png" width="222" height="120"></p>
-<h2 id="11-删除线"><a href="#11-删除线" class="headerlink" title="11.删除线"></a>11.删除线</h2><p>在要打上删除线的文字前后加上~~。</p>
-<p><img alt="markdown基本语法-ti.png" src="/2018/11/15/markdown/ti14.png" width="322" height="100"></p>
-
-          
+          <p>Markdown是一种可以使用普通文本编辑器编写的标记语言，通过简单的标记语法，它可以使普通文本内容具有一定的格式。</p>
+<h1 id="1-标题"><a href="#1-标题" class="headerlink" title="1.标题"></a>1.标题</h1><p><strong>按照字体大小一共有六级标题。注意，#号后必须有空格。</strong><br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/15/markdown/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -770,8 +778,7 @@
 
       
         
-          
-            <h1 id="1-什么是Hexo"><a href="#1-什么是Hexo" class="headerlink" title="1.什么是Hexo?"></a>1.什么是Hexo?</h1><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
+          <h1 id="1-什么是Hexo"><a href="#1-什么是Hexo" class="headerlink" title="1.什么是Hexo?"></a>1.什么是Hexo?</h1><p>Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。</p>
 <h1 id="2-Hexo的安装"><a href="#2-Hexo的安装" class="headerlink" title="2.Hexo的安装"></a>2.Hexo的安装</h1><p>安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：</p>
 <ul>
 <li>Node.js</li>
@@ -780,63 +787,14 @@
 <p>这两个软件的安装不再详述。下面重点介绍Hexo的安装。</p>
 <p><code>npm install -g hexo</code></p>
 <p>安装完成后，创建一个hexo文件夹，在git bash中执行</p>
-<p><code>hexo init 文件名</code></p>
-<p>将其作为博文存放地址。<br>然后进入文件夹内，执行hexo g，hexo s就可以打开本地预览。通过localhost:4000访问。<br>如果过程中存在任何问题，执行npm audit fix查看是否缺少什么组件。将缺少组件安装完毕，再执行即可。插件安装的基本命令如下</p>
-<p><code>npm install hexo-generator-index --save</code></p>
-<h1 id="3-Hexo基本语法"><a href="#3-Hexo基本语法" class="headerlink" title="3.Hexo基本语法"></a>3.Hexo基本语法</h1><h2 id="3-1-每次更新github的常用步骤"><a href="#3-1-每次更新github的常用步骤" class="headerlink" title="3.1 每次更新github的常用步骤"></a>3.1 每次更新github的常用步骤</h2><ol>
-<li>hexo new “postName” #新建文章</li>
-<li>hexo new page “pageName” #新建页面</li>
-<li>hexo generate #生成静态页面至public目录</li>
-<li>hexo server #开启预览访问端口（默认端口4000，’ctrl + c’关闭server）</li>
-<li>hexo deploy #部署到GitHub</li>
-<li>组合命令：<br>hexo s -g #生成并本地预览<br>hexo d -g #生成并上传</li>
-</ol>
-<h1 id="4-注意"><a href="#4-注意" class="headerlink" title="4.注意"></a>4.注意</h1><h2 id="4-1-域名访问"><a href="#4-1-域名访问" class="headerlink" title="4.1 域名访问"></a>4.1 域名访问</h2><p>每次更新完成后，要登录github，进入setting，设置Custom domain为你的域名(github会自动设置CNAME)，才能通过你自己的域名来访问。</p>
-<h2 id="4-2-hexo-d-报错"><a href="#4-2-hexo-d-报错" class="headerlink" title="4.2 hexo d 报错"></a>4.2 hexo d 报错</h2><p>hexo d后 ERROR Deployer not found: git</p>
-<p>没有安装 hexo-deployer-git ,执行命令 npm install hexo-deployer-git –save</p>
-<h2 id="4-3-上传图片问题"><a href="#4-3-上传图片问题" class="headerlink" title="4.3 上传图片问题"></a>4.3 上传图片问题</h2><ol>
-<li><p>cd到博客根目录下 查看_config.yml文件 查找 post_asset_folder 字段确定post_asset_folder 设置为true -&gt; post_asset_folder:true</p>
-</li>
-<li><p>当您设置 post_asset_folder 参数后，在建立文件时，Hexo 会自动建立一个与文章同名的文件夹，您可以把与该文章相关的所有资源都放到此文件夹内，这样就可以更方便的使用资源。</p>
-</li>
-<li><p>到博客的根目录下执行 npm install <a href="https://github.com/CodeFalling/hexo-asset-image" target="_blank" rel="noopener">https://github.com/CodeFalling/hexo-asset-image</a> –save 命令来进行插件的安装。</p>
-</li>
-<li><p>然后创建一文章 hexo new “test” 然后查看博客的 ../source/_posts 目录下的文件，会看到存在一个test 文件夹 和 test.md 文件</p>
-</li>
-</ol>
-<h1 id="5-修改Hexo主题"><a href="#5-修改Hexo主题" class="headerlink" title="5.修改Hexo主题"></a>5.修改Hexo主题</h1><p>本文采用的是NexT的主题，具体安装设置请见帖子[<a href="https://www.jianshu.com/p/33bc0a0a6e90]" target="_blank" rel="noopener">https://www.jianshu.com/p/33bc0a0a6e90]</a></p>
-<h1 id="6-添加标签"><a href="#6-添加标签" class="headerlink" title="6.添加标签"></a>6.添加标签</h1><h2 id="6-1-添加about标签"><a href="#6-1-添加about标签" class="headerlink" title="6.1 添加about标签"></a>6.1 添加about标签</h2><p>在blog目录下使用命令<code>hexo new page about</code>，会看到source目录下生成了一个about文件夹，里面包含一个index.md。在这个文件内，我们可以编写一些about的信息。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">---</span><br><span class="line">title: 关于我</span><br><span class="line">date: 2018-11-16 11:50:20</span><br><span class="line">type: &quot;about&quot;</span><br><span class="line">comments: false</span><br><span class="line">---</span><br><span class="line">自定义内容</span><br></pre></td></tr></table></figure></p>
-<p>然后，进入themes/next(进入你使用的主题下)打开_config.yml，在menu中添加about的链接。<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">menu:</span><br><span class="line">  home: / || home</span><br><span class="line">  about: /about/ || user</span><br><span class="line">  tags: /tags/ || tags</span><br><span class="line">  categories: /categories/ || th</span><br><span class="line">  archives: /archives/ || archive</span><br><span class="line">  schedule: /schedule/ || calendar</span><br><span class="line">  sitemap: /sitemap.xml || sitemap</span><br><span class="line">  commonweal: /404/ || heartbeat</span><br></pre></td></tr></table></figure></p>
-<p>在你的主题目录下的zh-Han.yml文件中的menu_icons中添加<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">menu_icons:</span><br><span class="line">  enable: true</span><br><span class="line">  # icon mapping</span><br><span class="line">  home: home</span><br><span class="line">  about: user</span><br><span class="line">  categories: th</span><br><span class="line">  tags: tags</span><br><span class="line">  archive: archives</span><br><span class="line">  schedule: schedule</span><br><span class="line">  sitemap: sitemap</span><br><span class="line">  commonweal: heartbeat</span><br></pre></td></tr></table></figure></p>
-<h2 id="6-2-添加categories和tags标签"><a href="#6-2-添加categories和tags标签" class="headerlink" title="6.2 添加categories和tags标签"></a>6.2 添加categories和tags标签</h2><p>基本同上</p>
-<h1 id="7-修改背景图片"><a href="#7-修改背景图片" class="headerlink" title="7.修改背景图片"></a>7.修改背景图片</h1><p>首先找到一个背景图片放到 hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; images 的路径下；<br>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt; _custom ，找到路径下的custom.styl文件，在文件的最上方加上一代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line"> background:url(/images/background.jpg);</span><br><span class="line"> height: 100%;width: 100%;</span><br><span class="line"> background-size:cover;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
-<h1 id="8-添加评论功能"><a href="#8-添加评论功能" class="headerlink" title="8.添加评论功能"></a>8.添加评论功能</h1><p> 使用的是来必力的评论系统，参考文章[<a href="https://blog.csdn.net/qq_41923622/article/details/82966186]" target="_blank" rel="noopener">https://blog.csdn.net/qq_41923622/article/details/82966186]</a></p>
-<p> 基本步骤：</p>
-<ul>
-<li>在livere官网[<a href="https://www.livere.com/]" target="_blank" rel="noopener">https://www.livere.com/]</a> 注册账号</li>
-<li>注册完成登录时会给你的注册邮箱发一个验证码!!!全是韩文，看不懂。。</li>
-<li>选择City版,安装。会让输入你网站的域名，网站名等。之后会生成City版的安装代码。</li>
-<li>在主题中更改：由于设置的时NexT主题，所以进入你的{博客路径}/themes/next/_config.yml,增加如下内容：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#Livere评论系统</span><br><span class="line">livere:</span><br><span class="line">  livere_uid: 填入安装代码的data-uid。</span><br></pre></td></tr></table></figure>
-</li>
-</ul>
-<ul>
-<li>在{博客路径}/themes/next/layout/_partials/share/下添加livere.swig文件，将安装代码复制进去，保存。</li>
-<li><p>{博客路径}/themes/next/layout/post.swig文件中添加下图所示红框处代码<br><img alt="markdown基本语法-ti.png" src="/2018/11/15/hexo/livere.png" width="372" height="150"></p>
-</li>
-<li><p>重新部署博客[hexo g /hexo d]查看效果。</p>
-<h1 id="9-设置个人头像"><a href="#9-设置个人头像" class="headerlink" title="9.设置个人头像"></a>9.设置个人头像</h1><p>将头像添加到主题下的source/images/目录下。在主题配置文件添加<br><code>avatar: https://dyddp.top/images/avatar.jpg</code><br>最后在主题下的source/css/components/sidebar-author.styl文件下的.site-author-image添加<br><code>background:url(/images/avatar.jpg);</code> 即可。</p>
-</li>
-</ul>
-<h1 id="10-阅读量统计"><a href="#10-阅读量统计" class="headerlink" title="10.阅读量统计"></a>10.阅读量统计</h1><ul>
-<li><p>主题下_config.yml文件修改</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  # count values only if the other configs are false</span><br><span class="line">  enable: true</span><br><span class="line">  # custom uv span for the whole site</span><br><span class="line">  site_uv: true</span><br><span class="line">  site_uv_header: &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; 访问人数</span><br><span class="line">  site_uv_footer: 人</span><br><span class="line">  # custom pv span for the whole site</span><br><span class="line">  site_pv: true</span><br><span class="line">  site_pv_header: &lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt; 总访问量</span><br><span class="line">  site_pv_footer: 次</span><br><span class="line">  # custom pv span for one page only</span><br><span class="line">  page_pv: true</span><br><span class="line">  page_pv_header: &lt;i class=&quot;fa fa-file-o&quot;&gt;&lt;/i&gt; 阅读数</span><br><span class="line">  page_pv_footer:</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>修改busuanzi的js地址，路径/layout/analytics/busuanzi_count.swig文件，src改为<br><code>https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js</code><br>即可。</p>
-<h1 id="11-更多功能设置"><a href="#11-更多功能设置" class="headerlink" title="11.更多功能设置"></a>11.更多功能设置</h1><p>请移步网址[<a href="https://blog.csdn.net/fanxiaobin577328725/article/details/79209975]查看更多设置。" target="_blank" rel="noopener">https://blog.csdn.net/fanxiaobin577328725/article/details/79209975]查看更多设置。</a></p>
-</li>
-</ul>
-
-          
+<p><code>hexo init 文件名</code><br></p>
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/2018/11/15/hexo/#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1166,7 +1124,337 @@
 
   
 
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
 
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
@@ -1175,8 +1463,36 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
+  
+  
+  <link rel="stylesheet" href="/lib/needsharebutton/needsharebutton.css">
+
+  
+  
+  <script src="/lib/needsharebutton/needsharebutton.js"></script>
+
+  <script>
+    
+    
+  </script>
+
   
 
   
