@@ -782,6 +782,22 @@
 </ol>
 <h1 id="5-修改Hexo主题"><a href="#5-修改Hexo主题" class="headerlink" title="5.修改Hexo主题"></a>5.修改Hexo主题</h1><p>本文采用的是NexT的主题，具体安装设置请见帖子[<a href="https://www.jianshu.com/p/33bc0a0a6e90]" target="_blank" rel="noopener">https://www.jianshu.com/p/33bc0a0a6e90]</a></p>
 <h1 id="6-修改背景图片"><a href="#6-修改背景图片" class="headerlink" title="6.修改背景图片"></a>6.修改背景图片</h1><p>首先找到一个背景图片放到 hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; images 的路径下；<br>hexo（hexo工程文件）-&gt; themes -&gt; next -&gt; source -&gt; css -&gt; _custom ，找到路径下的custom.styl文件，在文件的最上方加上一代码:<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">body &#123;</span><br><span class="line"> background:url(/images/background.jpg);</span><br><span class="line"> height: 100%;width: 100%;</span><br><span class="line"> background-size:cover;</span><br><span class="line"> &#125;</span><br></pre></td></tr></table></figure></p>
+<h1 id="7-添加评论功能"><a href="#7-添加评论功能" class="headerlink" title="7.添加评论功能"></a>7.添加评论功能</h1><p> 使用的是来必力的评论系统，参考文章[<a href="https://blog.csdn.net/qq_41923622/article/details/82966186]" target="_blank" rel="noopener">https://blog.csdn.net/qq_41923622/article/details/82966186]</a></p>
+<p> 基本步骤：</p>
+<ul>
+<li>在livere官网[<a href="https://www.livere.com/]" target="_blank" rel="noopener">https://www.livere.com/]</a> 注册账号</li>
+<li>注册完成登录时会给你的注册邮箱发一个验证码!!!全是韩文，看不懂。。</li>
+<li>选择City版,安装。会让输入你网站的域名，网站名等。之后会生成City版的安装代码。</li>
+<li>在主题中更改：由于设置的时NexT主题，所以进入你的{博客路径}/themes/next/_config.yml,增加如下内容：<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">#Livere评论系统</span><br><span class="line">livere:</span><br><span class="line">  livere_uid: 填入安装代码的data-uid。</span><br></pre></td></tr></table></figure>
+</li>
+</ul>
+<ul>
+<li>在{博客路径}/themes/next/layout/_partials/share/下添加livere.swig文件，将安装代码复制进去，保存。</li>
+<li><p>{博客路径}/themes/next/layout/post.swig文件中添加下图所示红框处代码<br><img alt="markdown基本语法-ti.png" src="/2018/11/15/hexo/livere.png" width="372" height="150"></p>
+</li>
+<li><p>重新部署博客[hexo g /hexo d]查看效果。</p>
+</li>
+</ul>
 
           
         
