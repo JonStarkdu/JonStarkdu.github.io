@@ -90,7 +90,7 @@
 <meta property="og:description" content="1.什么是Hexo?Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 2.Hexo的安装安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js Git  这两个软件的安装不再详述。下面重点介绍Hexo的安装。 npm install -g hexo 安装完成">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://dyddp.top/2018/11/15/hexo/livere.png">
-<meta property="og:updated_time" content="2018-11-16T08:07:55.590Z">
+<meta property="og:updated_time" content="2018-11-16T08:20:13.863Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo简介">
 <meta name="twitter:description" content="1.什么是Hexo?Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 2.Hexo的安装安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js Git  这两个软件的安装不再详述。下面重点介绍Hexo的安装。 npm install -g hexo 安装完成">
@@ -272,7 +272,7 @@
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="DYtt">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="https://dyddp.top/images/avatar.jpg">
     </span>
 
     <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
@@ -409,9 +409,10 @@
 <li><p>{博客路径}/themes/next/layout/post.swig文件中添加下图所示红框处代码<br><img alt="markdown基本语法-ti.png" src="/2018/11/15/hexo/livere.png" width="372" height="150"></p>
 </li>
 <li><p>重新部署博客[hexo g /hexo d]查看效果。</p>
-<h1 id="9-设置个人头像"><a href="#9-设置个人头像" class="headerlink" title="9.设置个人头像"></a>9.设置个人头像</h1></li>
-</ul>
+<h1 id="9-设置个人头像"><a href="#9-设置个人头像" class="headerlink" title="9.设置个人头像"></a>9.设置个人头像</h1><p>将头像添加到主题下的source/images/目录下。在主题配置文件添加<br><code>avatar: https://dyddp.top/images/avatar.jpg</code><br>最后在主题下的source/css/components/sidebar-author.styl文件下的.site-author-image添加<br><code>background:url(/images/avatar.jpg);</code> 即可。</p>
 <h1 id="10-更多功能设置"><a href="#10-更多功能设置" class="headerlink" title="10.更多功能设置"></a>10.更多功能设置</h1><p>请移步网址[<a href="https://blog.csdn.net/fanxiaobin577328725/article/details/79209975]查看更多设置。" target="_blank" rel="noopener">https://blog.csdn.net/fanxiaobin577328725/article/details/79209975]查看更多设置。</a></p>
+</li>
+</ul>
 
       
     </div>
@@ -537,6 +538,8 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image" src="https://dyddp.top/images/avatar.jpg" alt="DYtt">
+            
               <p class="site-author-name" itemprop="name">DYtt</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -641,6 +644,15 @@
 
 
   <div class="powered-by">由 <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a> 强力驱动</div>
+
+
+
+    <script async src="//dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <span id="busuanzi_container_site_pv">总访问量<span id="busuanzi_value_site_pv"></span>次</span>
+    <span class="post-meta-divider">|</span>
+    <span id="busuanzi_container_site_uv">总访客<span id="busuanzi_value_site_uv"></span>人</span>
+    <span class="post-meta-divider">|</span>
 
 
 
