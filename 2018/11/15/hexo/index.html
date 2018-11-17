@@ -90,7 +90,7 @@
 <meta property="og:description" content="1什么是Hexo?Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 2.Hexo的安装安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js Git  这两个软件的安装不再详述。下面重点介绍Hexo的安装。 npm install -g hexo 安装完成后">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://dyddp.top/2018/11/15/hexo/livere.png">
-<meta property="og:updated_time" content="2018-11-16T09:50:53.131Z">
+<meta property="og:updated_time" content="2018-11-17T08:37:37.031Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Hexo简介">
 <meta name="twitter:description" content="1什么是Hexo?Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。 2.Hexo的安装安装 Hexo 相当简单。然而在安装前，您必须检查电脑中是否已安装下列应用程序：  Node.js Git  这两个软件的安装不再详述。下面重点介绍Hexo的安装。 npm install -g hexo 安装完成后">
@@ -445,9 +445,9 @@
 <li><p>{博客路径}/themes/next/layout/post.swig文件中添加下图所示红框处代码<br><img alt="markdown基本语法-ti.png" src="/2018/11/15/hexo/livere.png" width="372" height="150"></p>
 </li>
 <li><p>重新部署博客[hexo g /hexo d]查看效果。</p>
-<h1 id="9-设置个人头像"><a href="#9-设置个人头像" class="headerlink" title="9.设置个人头像"></a>9.设置个人头像</h1><p>将头像添加到主题下的source/images/目录下。在主题配置文件添加<br><code>avatar: https://dyddp.top/images/avatar.jpg</code><br>最后在主题下的source/css/components/sidebar-author.styl文件下的.site-author-image添加<br><code>background:url(/images/avatar.jpg);</code> 即可。</p>
 </li>
 </ul>
+<h1 id="9-设置个人头像"><a href="#9-设置个人头像" class="headerlink" title="9.设置个人头像"></a>9.设置个人头像</h1><p>将头像添加到主题下的source/images/目录下。在主题配置文件添加<br><code>avatar: https://dyddp.top/images/avatar.jpg</code><br>最后在主题下的source/css/components/sidebar-author.styl文件下的.site-author-image添加<br><code>background:url(/images/avatar.jpg);</code> 即可。</p>
 <h1 id="10-阅读量统计"><a href="#10-阅读量统计" class="headerlink" title="10.阅读量统计"></a>10.阅读量统计</h1><ul>
 <li><p>主题下_config.yml文件修改</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">busuanzi_count:</span><br><span class="line">  # count values only if the other configs are false</span><br><span class="line">  enable: true</span><br><span class="line">  # custom uv span for the whole site</span><br><span class="line">  site_uv: true</span><br><span class="line">  site_uv_header: &lt;i class=&quot;fa fa-user&quot;&gt;&lt;/i&gt; 访问人数</span><br><span class="line">  site_uv_footer: 人</span><br><span class="line">  # custom pv span for the whole site</span><br><span class="line">  site_pv: true</span><br><span class="line">  site_pv_header: &lt;i class=&quot;fa fa-eye&quot;&gt;&lt;/i&gt; 总访问量</span><br><span class="line">  site_pv_footer: 次</span><br><span class="line">  # custom pv span for one page only</span><br><span class="line">  page_pv: true</span><br><span class="line">  page_pv_header: &lt;i class=&quot;fa fa-file-o&quot;&gt;&lt;/i&gt; 阅读数</span><br><span class="line">  page_pv_footer:</span><br></pre></td></tr></table></figure>
@@ -490,6 +490,10 @@
       
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/11/11/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
             
           </div>
 
