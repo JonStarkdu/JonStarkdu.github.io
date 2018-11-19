@@ -33,21 +33,15 @@ tags: git
 commit 4d070ae5940ce43b74d5e9ac2d918ac2b21d15c3
 Author: Edward <xxx>
 Date:   Wed Oct 11 17:40:12 2018 +0800
-
     modify mt7688 gpio mmap
-
 commit 208f8823cfa895b973b676cba1bc86d3109447e6
 Author: Edward <xxx>
 Date:   Wed Oct 11 17:39:07 2018 +0800
-
     del login
-
 commit 88361fef82f60810618c2bd08453ebf71140b059
 Author: Edward <xxx>
 Date:   Wed Oct 11 17:36:49 2018 +0800
-
     add fxSmartGW platform
-
 commit fdc5add13e13467bfa1ddec01fad9196d891fb89
 ```
 
@@ -80,3 +74,10 @@ git reset --hard HEAD^
 git reset –mixed：此为默认方式，不带任何参数的git reset，这种方式回退到某个版本，只保留源码，回退commit和index信息
 git reset –soft：回退到某个版本，只回退了commit的信息，不会恢复到index file一级。如果还要提交，直接commit即可
 git reset –hard：彻底回退到某个版本，本地的源码也会变为上一个版本的内容
+
+## 6.将本地更新的分支内容推送的远程仓库对应分支
+```
+git add *
+git commit -m"提交更新"
+git push origin [分支名]
+```
