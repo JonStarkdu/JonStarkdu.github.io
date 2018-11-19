@@ -132,6 +132,7 @@ livere:
 <img alt="markdown基本语法-ti.png" src="hexo/livere.png" width="372" height="150" >
 
 * 重新部署博客[hexo g /hexo d]查看效果。
+
 # 9.设置个人头像
 将头像添加到主题下的source/images/目录下。在主题配置文件添加
 `avatar: https://dyddp.top/images/avatar.jpg`
